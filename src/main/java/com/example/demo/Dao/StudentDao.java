@@ -18,11 +18,11 @@ public class StudentDao {
 
             {
                 put(1, new Student(1, "Krzysztof", "Maths"));
-                put(2, new Student(1, "Marcin", "English"));
-                put(3, new Student(1, "Aga", "Biology"));
-                put(4, new Student(1, "Kasia", "Maths"));
-                put(5, new Student(1, "Fryc", "Maths"));
-                put(6, new Student(1, "Dex", "Latin"));
+                put(2, new Student(2, "Marcin", "English"));
+                put(3, new Student(3, "Aga", "Biology"));
+                put(4, new Student(4, "Kasia", "Maths"));
+                put(5, new Student(5, "Fryc", "Maths"));
+                put(6, new Student(6, "Dex", "Latin"));
             }
 
         };
@@ -32,5 +32,9 @@ public class StudentDao {
     public Collection<Student> getAllStudents(){
         return this.students.values();
     };
+
+    public Student getStudentById(int id){
+        return this.students.get(id);
+    }
 
 }
