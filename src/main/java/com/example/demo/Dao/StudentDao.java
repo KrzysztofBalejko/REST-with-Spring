@@ -1,11 +1,13 @@
 package com.example.demo.Dao;
 
 import com.example.demo.Entity.Student;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+@Repository
 public class StudentDao {
 
     private static Map<Integer, Student> students;
